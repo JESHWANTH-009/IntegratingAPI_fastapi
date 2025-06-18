@@ -8,3 +8,5 @@ if response.status_code==200:
     data=response.json()
     print("weather type :",data['weather'][0]['description'])
     print("temparature",data['main']['temp'])
+    print("maximum temerature:",data['main']['temp_max'])
+    print("minimum temerature:",data['main']['temp_min'])
